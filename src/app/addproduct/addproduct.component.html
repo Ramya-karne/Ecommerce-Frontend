@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-4">
+            <h1>Add New product</h1>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="form-group">
+                <label for="" class="form-label">productId</label>
+                <input type="text" class="form-control" name="pid"[(ngModel)]="pid">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">productName</label>
+                <input type="text" class="form-control" name="pname"[(ngModel)]="pname">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">productPrice</label>
+                <input type="text" class="form-control" name="pprice"[(ngModel)]="pprice">
+            </div>
+            <div>
+                <div class="form-group">
+                    <label for="" class="form-label">productFeatures</label>
+                    <input type="text" class="form-control" name="pfeatures"[(ngModel)]="pfeatures">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">productImg</label>
+                    <input type="text" class="form-control" name="pimg"[(ngModel)]="pimg">    
+                </div><br>
+                <button class="btn btn-primary m-2"(click)="adding()">Add Product</button>
+                <button class="btn btn-danger">Cancel</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<router-outlet></router-outlet>
